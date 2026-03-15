@@ -123,7 +123,7 @@ export default function App() {
       
       const link = document.createElement('a');
       link.href = dataUrl;
-      link.download = `Plus500-AI-Analysis-${symbol}-${new Date().toISOString().split('T')[0]}.png`;
+      link.download = `VisionTrade-Analysis-${symbol}-${new Date().toISOString().split('T')[0]}.png`;
       link.click();
     } catch (err) {
       console.error("Error generating image:", err);
@@ -171,7 +171,7 @@ export default function App() {
             </div>
             <h1 className="text-2xl font-bold mb-2">Configuración Inicial</h1>
             <p className="text-slate-400 text-sm leading-relaxed">
-              Para comenzar a utilizar <span className="text-white font-semibold">Plus500 AI Insights</span>, por favor introduce tus credenciales de acceso.
+              Para comenzar a utilizar <span className="text-white font-semibold">VisionTrade</span>, por favor introduce tus credenciales de acceso.
             </p>
           </div>
 
@@ -246,7 +246,7 @@ export default function App() {
             <TrendingUp className="text-white w-6 h-6" />
           </div>
           <div>
-            <h1 className="font-bold text-lg leading-tight">Plus500 AI Insights</h1>
+            <h1 className="font-bold text-lg leading-tight">VisionTrade</h1>
             <p className="text-[10px] text-slate-500 uppercase tracking-widest font-mono">Elite Technical Analysis</p>
           </div>
         </div>
@@ -557,7 +557,7 @@ export default function App() {
                 </p>
 
                 <div className="w-full space-y-3">
-                  <h4 className="text-[10px] font-bold uppercase tracking-widest text-slate-500 text-left px-2">Activos Populares Plus500</h4>
+                  <h4 className="text-[10px] font-bold uppercase tracking-widest text-slate-500 text-left px-2">Activos Populares VisionTrade</h4>
                   <div className="grid grid-cols-1 gap-2">
                     {quickAssets.map((asset) => (
                       <button
@@ -596,7 +596,7 @@ export default function App() {
           <span className="flex items-center gap-1"><div className="w-1 h-1 rounded-full bg-plus-blue" /> Gemini 3.1 Pro Engine</span>
         </div>
         <div>
-          &copy; 2024 Plus500 AI Trader Insights • Prototipo de Análisis Avanzado
+          &copy; 2024 VisionTrade • Prototipo de Análisis Avanzado
         </div>
       </footer>
     </div>
