@@ -3,6 +3,7 @@ import { Search, TrendingUp, TrendingDown, AlertCircle, BrainCircuit, Target, Sh
 import { motion, AnimatePresence } from 'motion/react';
 import { analyzeAsset, TradingSignal } from './services/geminiService';
 import { domToPng } from 'modern-screenshot';
+import { Logo } from './components/Logo';
 
 declare global {
   interface Window {
@@ -167,7 +168,7 @@ export default function App() {
         >
           <div className="flex flex-col items-center text-center mb-8">
             <div className="w-16 h-16 bg-plus-blue rounded-2xl flex items-center justify-center shadow-lg shadow-plus-blue/20 mb-4">
-              <TrendingUp className="text-white w-8 h-8" />
+              <Logo size={40} className="brightness-200" />
             </div>
             <h1 className="text-2xl font-bold mb-2">Configuración Inicial</h1>
             <p className="text-slate-400 text-sm leading-relaxed">
@@ -243,11 +244,11 @@ export default function App() {
       <header className="h-16 border-bottom border-plus-border flex items-center px-6 bg-plus-dark/80 backdrop-blur-md sticky top-0 z-50 justify-between">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 bg-plus-blue rounded-lg flex items-center justify-center shadow-lg shadow-plus-blue/20">
-            <TrendingUp className="text-white w-6 h-6" />
+            <Logo size={28} className="brightness-200" />
           </div>
           <div>
             <h1 className="font-bold text-lg leading-tight">VisionTrade</h1>
-            <p className="text-[10px] text-slate-500 uppercase tracking-widest font-mono">Elite Technical Analysis</p>
+            <p className="text-[9px] text-slate-500 uppercase tracking-[0.2em] font-bold">Intelligent Trading Solutions</p>
           </div>
         </div>
 
@@ -596,7 +597,7 @@ export default function App() {
           <span className="flex items-center gap-1"><div className="w-1 h-1 rounded-full bg-plus-blue" /> Gemini 3.1 Pro Engine</span>
         </div>
         <div>
-          &copy; 2024 VisionTrade • Prototipo de Análisis Avanzado
+          &copy; 2024 VisionTrade • Intelligent Trading Solutions
         </div>
       </footer>
     </div>
